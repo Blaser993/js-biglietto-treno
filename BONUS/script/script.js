@@ -1,5 +1,3 @@
-console.log("works");
-
 // numero di chilometri che vuole percorrere?
 // l’età del passeggero?
 
@@ -41,14 +39,14 @@ if ((yourAge >= 18) && (yourAge <= 65)) {
     
     console.log ("Il prezzo del biglietto scontato è di", billPrize65, "€" );
     const result = document.getElementById("result");
-    result.innerHTML = (billPrize65 + " €")
+    result.innerHTML = (billPrize65 + " €");
    
 
-} else (yourAge < 18) {
+} -else if (yourAge < 18) {
     
     console.log ("Il prezzo del biglietto scontato è di", billPrize18, "€" );
     const result = document.getElementById("result");
-    result.innerHTML = (billPrize18 + " €")
+    result.innerHTML = (billPrize18 + " €");
   
 }
 
