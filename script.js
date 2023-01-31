@@ -14,19 +14,40 @@ let yourDistance = prompt("Scrivi la distanza in Km che vuoi percorrere in Km");
 
 const billPrize = (yourDistance * 0.21);
 
+let billPrize18 = (billPrize * 0.2);
+let billPrize65 = (billPrize * 0.4);
+
+
+
 console.log ("Biglietto di", yourName, yourSurname);
 console.log ("Per una tratta di", yourDistance, "Km");
 console.log ("Al costo di", billPrize, "€");
 console.log ("Età del passeggero:", yourAge, "anni");
 
 
-
-
-
-
-
-
 // - va applicato uno sconto del 20% per i minorenni
 // - va applicato uno sconto del 40% per gli over 65.
 // - prezzo finale con massimo 2 decimali
+
+
+
+if ((yourAge >= 18) && (yourAge <= 65)) {
+    
+    billPrize === billPrize;
+    console.log ("Il prezzo del biglietto non scontato è di", billPrize, "€" );
+
+} else if  (yourAge > 65) {
+    
+    billPrize === billPrize65;
+    console.log ("Il prezzo del biglietto scontato è di", billPrize65, "€" );
+
+} else if (yourAge < 18) {
+    
+    billPrize === billPrize18;
+    console.log ("Il prezzo del biglietto scontato è di", billPrize18, "€" );
+
+}
+
+
+
 
