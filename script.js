@@ -14,10 +14,11 @@ let yourDistance = prompt("Scrivi la distanza in Km che vuoi percorrere in Km");
 
 const billPrize = (yourDistance * 0.21);
 
-let billPrize18 = (billPrize * 0.2);
-let billPrize65 = (billPrize * 0.4);
+let discount20 = (billPrize * 0.2);
+let discount40 = (billPrize * 0.4);
 
-
+billPrize18 = (billPrize - discount20);
+billPrize65 = (billPrize - discount40);
 
 console.log ("Biglietto di", yourName, yourSurname);
 console.log ("Per una tratta di", yourDistance, "Km");
