@@ -34,19 +34,25 @@ if ((yourAge >= 18) && (yourAge <= 65)) {
     
     billPrize === billPrize;
     console.log ("Il prezzo del biglietto non scontato è di", billPrize, "€" );
+    const result = document.getElementById("result");
+    result.innerHTML = (billPrize + " €")   
 
 } else if  (yourAge > 65) {
     
     billPrize === billPrize65;
     console.log ("Il prezzo del biglietto scontato è di", billPrize65, "€" );
+    const result = document.getElementById("result");
+    result.innerHTML = (billPrize65 + " €")
+   
 
 } else if (yourAge < 18) {
     
     billPrize === billPrize18;
     console.log ("Il prezzo del biglietto scontato è di", billPrize18, "€" );
-
+    const result = document.getElementById("result");
+    result.innerHTML = (billPrize18 + " €")
+  
 }
 
 
 // - prezzo finale con massimo 2 decimali
-
