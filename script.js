@@ -45,7 +45,7 @@ if ((yourAge >= 18) && (yourAge <= 65)) {
     result.innerHTML = (billPrize65 + " €")
    
 
-} else if (yourAge < 18) {
+} else (yourAge < 18) {
     
     billPrize === billPrize18;
     console.log ("Il prezzo del biglietto scontato è di", billPrize18, "€" );
