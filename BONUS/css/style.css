@@ -32,6 +32,11 @@ h3{
     font-weight: 300;
 }
 
+h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+
 
 
 .debug{
@@ -53,9 +58,9 @@ body{
 
 .biglietto{
     min-width: 100%;
-    margin-top: 50px;
+    margin-top: 200px;
     border: 2px solid black;
-    border-radius: 32px;
+    border-radius: 64px;
     padding: 32px;
     background-color: white;
 }
@@ -76,4 +81,13 @@ body{
 
 .aligned--end{
     text-align: end;
+}
+
+#costo{
+    text-decoration:line-through;
+    color: grey;
+}
+
+#result{
+    color: green;
 }
