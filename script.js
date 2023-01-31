@@ -17,8 +17,8 @@ const billPrize = (yourDistance * 0.21);
 let discount20 = (billPrize * 0.2);
 let discount40 = (billPrize * 0.4);
 
-billPrize18 = (billPrize - discount20);
-billPrize65 = (billPrize - discount40);
+let billPrize18 = (billPrize - discount20);
+let billPrize65 = (billPrize - discount40);
 
 console.log ("Biglietto di", yourName, yourSurname);
 console.log ("Per una tratta di", yourDistance, "Km");
@@ -28,9 +28,6 @@ console.log ("Età del passeggero:", yourAge, "anni");
 
 // - va applicato uno sconto del 20% per i minorenni
 // - va applicato uno sconto del 40% per gli over 65.
-// - prezzo finale con massimo 2 decimali
-
-
 
 if ((yourAge >= 18) && (yourAge <= 65)) {
     
@@ -50,5 +47,5 @@ if ((yourAge >= 18) && (yourAge <= 65)) {
 }
 
 
-
+// - prezzo finale con massimo 2 decimali
 
