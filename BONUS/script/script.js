@@ -32,10 +32,9 @@ const billPrize = (yourDistance * 0.21);
 document.getElementById("costo");
 costo.innerHTML = (billPrize +  " €"); 
 
+const discount20 = (billPrize * 0.2);
+const discount40 = (billPrize * 0.4);
 
-
-let discount20 = (billPrize * 0.2);
-let discount40 = (billPrize * 0.4);
 
 
 let billPrize18 = parseFloat(billPrize - discount20).toFixed(2);
@@ -52,26 +51,35 @@ console.log ("Età del passeggero:", yourAge, "anni");
 // - va applicato uno sconto del 40% per gli over 65.
 
 if ((yourAge >= 18) && (yourAge <= 65)) {
+
+    document.getElementById("sconto");
+    sconto.innerHTML = ("NESSUNO SCONTO"); 
     
     console.log ("Il prezzo del biglietto non scontato è di", billPrize, "€" );
     const result = document.getElementById("result");
-    result.innerHTML = (billPrize + " €")   
+    result.innerHTML = (billPrize + " €");
 
 
 } else if  (yourAge > 65) {
+
+    document.getElementById("sconto");
+    sconto.innerHTML = ("40% - OVER 65");
     
     console.log ("Il prezzo del biglietto scontato è di", billPrize65, "€" );
     const result = document.getElementById("result");
     result.innerHTML = (billPrize65 + " €");
-   
+
 
 } else if (yourAge < 18) {
+
+    document.getElementById("sconto");
+    sconto.innerHTML = ("20% - UNDER 18"); 
     
     console.log ("Il prezzo del biglietto scontato è di", billPrize18, "€" );
     const result = document.getElementById("result");
     result.innerHTML = (billPrize18 + " €");
-  
 }
+
 
 
 // - prezzo finale con massimo 2 decimali
